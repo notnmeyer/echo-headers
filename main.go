@@ -45,5 +45,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)
 	fmt.Printf("Server started on :%d\n", cfg.port)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(fmt.Sprintf(":%d", cfg.port, nil)
 }
